@@ -63,7 +63,7 @@ class ComputerPlayer(Player):
 				limit = ceil(total_dice_estimate/6.0) + random.randrange(0, ceil(total_dice_estimate/4.0))
 			else:
 				limit = ceil(total_dice_estimate/6.0) * 2 + random.randrange(0, ceil(total_dice_estimate/4.0))
-			if current_bet.quantity > limit:
+			if current_bet.quantity >= limit:
 				return DUDO
 			else:
 				bet = None
