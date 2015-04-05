@@ -11,6 +11,7 @@ from bet_exceptions import InvalidBetException
 from die import Die
 from math import floor
 from math import ceil
+from strings import BAD_BET_ERROR
 from strings import INVALID_DIE_VALUE_ERROR
 from strings import NON_PALIFICO_CHANGE_ERROR
 from strings import INVALID_NON_WILDCARD_QUANTITY
@@ -133,6 +134,6 @@ class HumanPlayer(Player):
 					bet = None
 					print INVALID_BET_EXCEPTION
 			except ValueError:
-				self.print_bad_bet_error()
+				print BAD_BET_ERROR
 
 		return bet
