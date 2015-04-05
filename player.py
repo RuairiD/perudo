@@ -58,7 +58,7 @@ class ComputerPlayer(Player):
 			bet = create_bet(quantity, value, current_bet, self, self.game)
 		else:
 			# Estimate the number of dice in the game with the bet's value
-			if current_bet.value == 1:
+			if current_bet.value == 1 or self.game.is_palifico_round():
 				# There should be twice as many of any value than 1
 				limit = ceil(total_dice_estimate/6.0) + random.randrange(0, ceil(total_dice_estimate/4.0))
 			else:
