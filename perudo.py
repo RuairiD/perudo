@@ -14,6 +14,7 @@ from strings import round_title
 from strings import welcome_message
 from strings import winner
 
+# "Burn all you love."
 bot_names = ['Winston', 'Luke', 'Jeff', 'Jia', 'Ben']
 
 class Perudo(object):
