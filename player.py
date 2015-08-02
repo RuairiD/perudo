@@ -105,11 +105,11 @@ class HumanPlayer(Player):
 			if bet_input.lower() == 'dudo':
 				return DUDO
 			if 'x' not in bet_input:
-				self.print_bad_bet_error()
+				print BAD_BET_ERROR
 				continue
 			bet_fields = bet_input.split('x')
 			if len(bet_fields) < 2:
-				self.print_bad_bet_error()
+				print BAD_BET_ERROR
 				continue
 
 			try:
